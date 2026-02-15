@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalize the Why? — Before the Move</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="before.html" class="active">Before</a></li>
+      <li><a href="during.html">During</a></li>
+      <li><a href="after.html">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <a href="before.html">Before the Move</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>Finalize the Why?</span>
+  </div>
+
+  <!-- Article Content -->
+  <article class="article">
+
+    <h1>Finalize the Why?</h1>
+    <p class="article__meta">Last updated: February 2026</p>
+
+    <p>Moving back to India is one of the biggest decisions you'll make. Before diving into logistics, take the time to get brutally honest about <strong>why</strong> you're doing this. A clear "why" keeps you grounded when the process gets overwhelming — and it will.</p>
+
+    <h2>Common reasons people move back</h2>
+
+    <ul>
+      <li><strong>Family</strong> — Aging parents, wanting kids to grow up near grandparents, or simply missing the closeness of family life.</li>
+      <li><strong>Career opportunity</strong> — India's tech and startup ecosystem has matured. Some roles pay competitively, especially in leadership or niche domains.</li>
+      <li><strong>Lifestyle</strong> — The cost of living, household help, food, and social life can be dramatically better in India for certain lifestyles.</li>
+      <li><strong>Belonging</strong> — After years abroad, many feel a pull to be "home" — culturally, socially, and emotionally.</li>
+      <li><strong>Visa fatigue</strong> — H1B uncertainty, green card backlogs, and immigration stress can accelerate the decision.</li>
+    </ul>
+
+    <div class="callout callout--tip">
+      <p class="callout__title">Tip</p>
+      <p>Write your reasons down. Literally. When you're knee-deep in paperwork or having a rough week post-move, you'll want to revisit this list.</p>
+    </div>
+
+    <h2>Questions to ask yourself</h2>
+
+    <p>There's no right or wrong answer — but being honest now saves regret later.</p>
+
+    <ol>
+      <li><strong>Is this my decision or external pressure?</strong> — Family expectations are real, but resentment builds if the move doesn't feel like your own choice.</li>
+      <li><strong>Am I running toward something or away from something?</strong> — Moving back to escape burnout or a bad situation doesn't fix those problems. India has its own version of them.</li>
+      <li><strong>Can I handle a significant lifestyle adjustment?</strong> — Infrastructure, pollution, bureaucracy, and pace of life are genuinely different. Nostalgia often glosses over the daily friction.</li>
+      <li><strong>What does my partner/family think?</strong> — If you're not aligned with your spouse or immediate family, the move will strain relationships.</li>
+      <li><strong>What's my financial runway?</strong> — Even if you have a job lined up, the transition period costs more than you expect.</li>
+    </ol>
+
+    <h2>The "trial run" approach</h2>
+
+    <p>If you're on the fence, consider spending 2-4 weeks in India — not as a vacation, but as a simulation. Work remotely if you can, deal with daily errands, visit hospitals, open a bank account. It's the fastest way to pressure-test your decision.</p>
+
+    <div class="callout callout--warning">
+      <p class="callout__title">Warning</p>
+      <p>A two-week vacation to India is not the same as living there. Holidays filter out the frustrations. Make sure your trial run includes mundane, everyday life.</p>
+    </div>
+
+    <h2>When you're not 100% sure</h2>
+
+    <p>Almost nobody is 100% sure. That's normal. What matters is that your core reasons are strong enough to carry you through the hard parts. If your "why" is clear and deeply personal, the logistics become solvable problems rather than deal-breakers.</p>
+
+    <div class="callout callout--note">
+      <p class="callout__title">Note</p>
+      <p>Moving back isn't always easily reversible. Especially for H1-B holders, returning to the US means finding a new sponsor — and that's significantly harder to do from outside the country. Factor this into your decision and don't assume you can simply "go back if it doesn't work out."</p>
+    </div>
+
+    <!-- Back link -->
+    <a href="before.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Back to Before the Move
+    </a>
+
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+    <p class="footer__disclaimer">This is a personal documentation of thoughts and experiences. It will contain mistakes and inaccuracies — please use your own judgement and verify information independently before making any decisions.</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
