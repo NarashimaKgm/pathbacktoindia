@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: Change the title below -->
+  <title>Topic Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <!-- EDIT: Add class="active" to the correct phase link -->
+      <li><a href="before.html">Before</a></li>
+      <li><a href="during.html">During</a></li>
+      <li><a href="after.html">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <!-- EDIT: Update the breadcrumb links and text -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <a href="before.html">Before the Move</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>Topic Title</span>
+  </div>
+
+  <!-- Article Content -->
+  <article class="article">
+
+    <!-- EDIT: Change the heading -->
+    <h1>Topic Title</h1>
+    <p class="article__meta">Last updated: February 2026</p>
+
+    <!-- ============================================
+         YOUR CONTENT STARTS HERE
+         Use the HTML elements below as building blocks.
+         ============================================ -->
+
+    <p>Write your introduction paragraph here. This should give readers a quick overview of what this topic covers and why it matters.</p>
+
+    <h2>Section Heading</h2>
+
+    <p>Add your content here. You can use regular paragraphs, lists, and the callout boxes shown below.</p>
+
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+
+    <h3>Sub-section Heading</h3>
+
+    <p>More detailed content goes here. Use <strong>bold text</strong> to emphasize key points.</p>
+
+    <!-- Tip callout (gold) -->
+    <div class="callout callout--tip">
+      <p class="callout__title">Tip</p>
+      <p>Write a helpful tip or pro-tip here.</p>
+    </div>
+
+    <!-- Warning callout (red) -->
+    <div class="callout callout--warning">
+      <p class="callout__title">Warning</p>
+      <p>Write an important warning or caution here.</p>
+    </div>
+
+    <!-- Note callout (blue) -->
+    <div class="callout callout--note">
+      <p class="callout__title">Note</p>
+      <p>Write additional context or a useful note here.</p>
+    </div>
+
+    <h2>Another Section</h2>
+
+    <p>Continue adding sections as needed. Each h2 creates a major section break.</p>
+
+    <ol>
+      <li>Numbered step one</li>
+      <li>Numbered step two</li>
+      <li>Numbered step three</li>
+    </ol>
+
+    <!-- ============================================
+         YOUR CONTENT ENDS HERE
+         ============================================ -->
+
+    <!-- Back link -->
+    <!-- EDIT: Update the href and text to match the parent phase page -->
+    <a href="before.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Back to Before the Move
+    </a>
+
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

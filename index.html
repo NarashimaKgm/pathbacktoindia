@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigating the Journey Back Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="before.html">Before</a></li>
+      <li><a href="during.html">During</a></li>
+      <li><a href="after.html">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="hero__title"></h1>
+    <p class="hero__tagline">Navigating the journey back home &mdash; lessons, tips, and everything learned moving from the US to India.</p>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline">
+
+    <!-- Before -->
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <span class="timeline__phase">Phase 1</span>
+        <h2 class="timeline__title">Before the Move</h2>
+        <p class="timeline__desc">Paperwork, finances, closing accounts, shipping belongings, and all the prep work before you board that flight.</p>
+        <a href="before.html" class="timeline__cta">
+          Explore topics
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- During -->
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <span class="timeline__phase">Phase 2</span>
+        <h2 class="timeline__title">During the Transition</h2>
+        <p class="timeline__desc">The move itself — shipping logistics, travel, temporary housing, and handling the in-between period.</p>
+        <a href="during.html" class="timeline__cta">
+          Explore topics
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- After -->
+    <div class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <span class="timeline__phase">Phase 3</span>
+        <h2 class="timeline__title">After Settling In</h2>
+        <p class="timeline__desc">Setting up life in India — banking, healthcare, adjusting to daily life, career shifts, and cultural readjustment.</p>
+        <a href="after.html" class="timeline__cta">
+          Explore topics
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

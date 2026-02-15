@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>During the Transition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="before.html">Before</a></li>
+      <li><a href="during.html" class="active">During</a></li>
+      <li><a href="after.html">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>During the Transition</span>
+  </div>
+
+  <!-- Phase Header -->
+  <div class="phase-header">
+    <h1 class="phase-header__title">During the Transition</h1>
+    <p class="phase-header__desc">The move itself — handling logistics, travel, temporary arrangements, and navigating the in-between period.</p>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="card-grid">
+
+    <!-- Card: Shipping & Logistics -->
+    <a href="during-shipping.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3 class="card__title">Shipping & Logistics</h3>
+        <p class="card__desc">Sea freight vs air freight, what to ship, customs clearance, and packing tips.</p>
+      </div>
+    </a>
+
+    <!-- Card: Travel Planning -->
+    <a href="during-travel.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+        </div>
+        <h3 class="card__title">Travel Planning</h3>
+        <p class="card__desc">Flight booking tips, luggage strategy, pet relocation, and airport procedures.</p>
+      </div>
+    </a>
+
+    <!-- Card: Temporary Housing -->
+    <a href="during-housing.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3 class="card__title">Temporary Housing</h3>
+        <p class="card__desc">Short-term stays, serviced apartments, staying with family, and finding your feet.</p>
+      </div>
+    </a>
+
+    <!--
+    ============================================
+    ADD MORE CARDS BELOW
+    Copy the block below, paste it here, and update the href, icon, title, and description.
+
+    <a href="during-YOUR-TOPIC.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3 class="card__title">Your Topic Title</h3>
+        <p class="card__desc">A short one-line description of this topic.</p>
+      </div>
+    </a>
+    ============================================
+    -->
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

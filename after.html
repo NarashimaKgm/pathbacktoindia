@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After Settling In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="before.html">Before</a></li>
+      <li><a href="during.html">During</a></li>
+      <li><a href="after.html" class="active">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>After Settling In</span>
+  </div>
+
+  <!-- Phase Header -->
+  <div class="phase-header">
+    <h1 class="phase-header__title">After Settling In</h1>
+    <p class="phase-header__desc">Rebuilding life in India — setting up banking, healthcare, career moves, and adjusting to daily routines.</p>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="card-grid">
+
+    <!-- Card: Banking & Finances -->
+    <a href="after-banking.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <h3 class="card__title">Banking & Finances</h3>
+        <p class="card__desc">Opening Indian bank accounts, NRE/NRO decisions, credit cards, and UPI setup.</p>
+      </div>
+    </a>
+
+    <!-- Card: Healthcare -->
+    <a href="after-healthcare.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3 class="card__title">Healthcare</h3>
+        <p class="card__desc">Health insurance options, finding doctors, medical records transfer, and pharmacy differences.</p>
+      </div>
+    </a>
+
+    <!-- Card: Career & Work -->
+    <a href="after-career.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3 class="card__title">Career & Work</h3>
+        <p class="card__desc">Job market realities, remote work setup, freelancing, salary expectations, and networking.</p>
+      </div>
+    </a>
+
+    <!--
+    ============================================
+    ADD MORE CARDS BELOW
+    Copy the block below, paste it here, and update the href, icon, title, and description.
+
+    <a href="after-YOUR-TOPIC.html" class="card__link">
+      <div class="card">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3 class="card__title">Your Topic Title</h3>
+        <p class="card__desc">A short one-line description of this topic.</p>
+      </div>
+    </a>
+    ============================================
+    -->
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
