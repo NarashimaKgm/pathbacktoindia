@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Aadhaar — After Settling In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="before.html">Before</a></li>
+      <li><a href="during.html">During</a></li>
+      <li><a href="after.html" class="active">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <a href="after.html">After Settling In</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>Get Aadhaar</span>
+  </div>
+
+  <!-- Article Content -->
+  <article class="article">
+
+    <h1>Get Aadhaar</h1>
+    <p class="article__meta">Last updated: February 2026</p>
+
+    <p>Aadhaar is a 12-digit unique identity number issued by UIDAI (Unique Identification Authority of India). It is linked to your biometrics — fingerprints and iris scan. You will need it for almost everything in India: opening a bank account, getting a SIM card, filing taxes, receiving government benefits, and more. Getting it sorted early makes every other step easier.</p>
+
+    <div class="callout callout--note">
+      <p class="callout__title">Note</p>
+      <p>If you already have an Aadhaar from before you moved to the US, you don't need a new one. But you may need to update your address and phone number. You can do this online at myaadhaar.uidai.gov.in or by visiting an Aadhaar enrollment center.</p>
+    </div>
+
+    <h2>Documents you'll need</h2>
+
+    <p>For a fresh Aadhaar enrollment, you need proof of identity and proof of address. Commonly accepted documents:</p>
+
+    <ul>
+      <li><strong>Proof of identity</strong> — Indian passport, PAN card, or voter ID.</li>
+      <li><strong>Proof of address</strong> — Passport with current Indian address, utility bill, bank statement, rental agreement, or a letter from a gazetted officer / tehsildar. If you've just arrived and don't have address proof in your name, a landlord's NOC or a relative's address proof along with a letter confirming you live there can work.</li>
+      <li><strong>Date of birth proof</strong> — Passport or birth certificate.</li>
+    </ul>
+
+    <div class="callout callout--tip">
+      <p class="callout__title">Tip</p>
+      <p>Carry originals of all documents. The operator will scan them at the center. Photocopies are not enough on their own.</p>
+    </div>
+
+    <h2>Enrollment process</h2>
+
+    <ol>
+      <li><strong>Book an appointment</strong> — Visit uidai.gov.in and book a slot at a nearby Aadhaar enrollment center. Walk-ins are possible but expect long wait times.</li>
+      <li><strong>Visit the center</strong> — Bring your original documents. The operator will verify them, take your photograph, scan your fingerprints, and capture an iris scan.</li>
+      <li><strong>Collect your acknowledgment slip</strong> — You'll receive an enrollment number. Use this to track the status of your application online.</li>
+      <li><strong>Receive your Aadhaar</strong> — The physical card is mailed to your address in 2-4 weeks. You can download the e-Aadhaar (digital copy) from the UIDAI website as soon as it's generated, usually within 2-3 weeks.</li>
+    </ol>
+
+    <h2>Common issues</h2>
+
+    <ul>
+      <li><strong>Address proof difficulties</strong> — If you're staying with family and don't have any utility bills in your name, the head of household can provide their Aadhaar along with a consent letter. Some centers are more flexible than others — if one center rejects your documents, try another.</li>
+      <li><strong>Biometric failures</strong> — If your fingerprints don't scan well (common if your hands are dry or worn), the operator may retry a few times. Iris scan is the fallback. Moisturizing your hands before the appointment can help.</li>
+      <li><strong>Long processing times</strong> — While the official timeline is 2-3 weeks, delays do happen. Download the e-Aadhaar as soon as it's available — you don't need to wait for the physical card to start using it.</li>
+    </ul>
+
+    <div class="callout callout--warning">
+      <p class="callout__title">Warning</p>
+      <p>Never share your Aadhaar number or OTP with anyone over the phone. Aadhaar-related fraud is common. UIDAI will never call you asking for your Aadhaar details.</p>
+    </div>
+
+    <!-- Back link -->
+    <a href="after.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Back to After Settling In
+    </a>
+
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+    <p class="footer__disclaimer">This is a personal documentation of thoughts and experiences. It will contain mistakes and inaccuracies — please use your own judgement and verify information independently before making any decisions.</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
