@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucket List — Before the Move</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand"></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="before.html" class="active">Before</a></li>
+      <li><a href="during.html">During</a></li>
+      <li><a href="after.html">After</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <a href="before.html">Before the Move</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>Bucket List</span>
+  </div>
+
+  <!-- Article Content -->
+  <article class="article">
+
+    <h1>Bucket List</h1>
+    <p class="article__meta">Last updated: February 2026</p>
+
+    <p>You've probably been meaning to visit certain places in the US for years — national parks, cities, landmarks, restaurants, or experiences you kept pushing to "next year." Now is the time. Once you move back to India, returning to the US as a tourist is not straightforward, and it could be years before you get the chance again.</p>
+
+    <div class="callout callout--warning">
+      <p class="callout__title">Warning</p>
+      <p>If you don't already have a B1/B2 (tourist) visa, getting one after you move back can be a long wait. US tourist visa appointment slots in India often have wait times of several months to over a year, and having an appointment doesn't guarantee approval.</p>
+    </div>
+
+    <h2>Make the list now</h2>
+
+    <p>Sit down and write out every place or experience you've been putting off. Don't filter — just get it all out. Then prioritize based on what matters most to you and what's realistic given your timeline.</p>
+
+    <p>Some ideas to jog your memory:</p>
+
+    <ul>
+      <li><strong>National parks</strong> — Grand Canyon, Yellowstone, Yosemite, Zion, Glacier, Acadia. These are genuinely hard to experience from anywhere else in the world.</li>
+      <li><strong>Cities you've never visited</strong> — New York, San Francisco, Chicago, New Orleans, Nashville, Seattle, Boston. Each has a character you won't find elsewhere.</li>
+      <li><strong>Road trips</strong> — Pacific Coast Highway, Route 66, Blue Ridge Parkway. The open-road experience is uniquely American.</li>
+      <li><strong>Seasonal experiences</strong> — Fall foliage in New England, cherry blossoms in DC, skiing in Colorado, beach weekends in Florida or Hawaii.</li>
+      <li><strong>Food and culture</strong> — That barbecue place in Texas, the seafood shack in Maine, the jazz club in New Orleans, the museum you never got around to.</li>
+      <li><strong>Events</strong> — A baseball or football game, a music festival, Mardi Gras, Fourth of July fireworks in a new city.</li>
+    </ul>
+
+    <h2>Practical tips</h2>
+
+    <ul>
+      <li><strong>Start early</strong> — Don't wait until your last month. Some trips need advance booking, and your final weeks will be consumed by packing, paperwork, and farewells.</li>
+      <li><strong>Use your remaining PTO</strong> — If you're still employed and have unused vacation days, this is the best use of them. Some employers also offer a notice period where you can take time off.</li>
+      <li><strong>Travel light</strong> — You're going to be shipping or selling your belongings soon. This is a good time to practice traveling with less.</li>
+      <li><strong>Bring friends or family along</strong> — If your parents or family are visiting from India before the move, take them to these places too. It becomes a shared memory.</li>
+    </ul>
+
+    <div class="callout callout--tip">
+      <p class="callout__title">Tip</p>
+      <p>If a big trip isn't feasible, even smaller things count — a favorite local hike, a restaurant you've always wanted to try, a day trip to a nearby town. The point is to not leave with a list of regrets about things that were an hour's drive away.</p>
+    </div>
+
+    <h2>Things you'll miss more than you expect</h2>
+
+    <p>Beyond the bucket list destinations, there are everyday American experiences that are hard to replicate in India. Consider doing some of these one last time:</p>
+
+    <ul>
+      <li>A lazy weekend at a farmer's market</li>
+      <li>Hiking trails near your home</li>
+      <li>Your favorite coffee shop or diner</li>
+      <li>A drive through quiet suburban streets at sunset</li>
+      <li>Grocery shopping at Trader Joe's or Costco</li>
+      <li>A cookout or potluck with friends</li>
+    </ul>
+
+    <p>These sound small, but they're the textures of daily life that you'll remember the most. Don't wait until the last day to notice them.</p>
+
+    <!-- Back link -->
+    <a href="before.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Back to Before the Move
+    </a>
+
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>A personal guide to moving back home.</p>
+    <p class="footer__disclaimer">This is a personal documentation of thoughts and experiences. It will contain mistakes and inaccuracies — please use your own judgement and verify information independently before making any decisions.</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
