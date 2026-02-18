@@ -1,4 +1,4 @@
-# Naga
+﻿# Naga
 
 Static website documenting learnings from a US-to-India transition. Plain HTML + CSS, no build tools, no dependencies.
 
@@ -6,22 +6,22 @@ Static website documenting learnings from a US-to-India transition. Plain HTML +
 
 - HTML5 + CSS3 (no frameworks, no JavaScript libraries)
 - Google Fonts (Inter: 400, 500, 600, 700) loaded via CDN
-- Minimal inline `<script>` on every page for mobile nav toggle — no external JS
-- Open `index.html` directly in a browser to preview — no server needed
+- Minimal inline `<script>` on every page for mobile nav toggle - no external JS
+- Open `index.html` directly in a browser to preview - no server needed
 
 ## File Structure
 
 ```
 pathbacktoindia/
-├── index.html              Landing page — hero + vertical timeline with 3 phases
-├── before.html             Phase page — card grid for "Before the Move" (3 cards)
-├── during.html             Phase page — card grid for "During the Transition" (3 cards)
-├── after.html              Phase page — card grid for "After Settling In" (3 cards)
-├── topic-template.html     Reusable template for individual topic pages
-├── css/
-│   └── style.css           Single shared stylesheet (all design tokens + components)
-└── assets/
-    └── icons/              SVG icons (currently empty — all icons are inline SVG)
+|-- index.html              Landing page - hero + vertical timeline with 3 phases
+|-- before.html             Phase page - card grid for "Before the Move" (3 cards)
+|-- during.html             Phase page - card grid for "During the Transition" (3 cards)
+|-- after.html              Phase page - card grid for "After Settling In" (3 cards)
+|-- topic-template.html     Reusable template for individual topic pages
+|-- css/
+|   `-- style.css           Single shared stylesheet (all design tokens + components)
+`-- assets/
+    `-- icons/              SVG icons (currently empty - all icons are inline SVG)
 ```
 
 ### Current content status
@@ -50,8 +50,8 @@ All design tokens live in `css/style.css` under `:root`.
 |----------------------|-----------|---------------------------------|
 | `--color-bg`         | `#FFFFFF` | Page background                 |
 | `--color-surface`    | `#F7F8FA` | Hero section, card icon bg      |
-| `--color-primary`    | `#1B2A4A` | Navy — headings, nav, links     |
-| `--color-accent`     | `#D4A373` | Gold — hover accents, markers   |
+| `--color-primary`    | `#1B2A4A` | Navy - headings, nav, links     |
+| `--color-accent`     | `#D4A373` | Gold - hover accents, markers   |
 | `--color-text`       | `#2D3436` | Body text                       |
 | `--color-muted`      | `#636E72` | Secondary/meta text             |
 | `--color-border`     | `#E0E0E0` | Borders and dividers            |
@@ -94,7 +94,7 @@ All design tokens live in `css/style.css` under `:root`.
 | `.timeline__marker`     | `index.html`       | Circle dot on timeline line        |
 | `.breadcrumb`           | Phase/topic pages  | Navigation breadcrumb              |
 | `.phase-header`         | Phase pages        | Phase title + description          |
-| `.card-grid`            | Phase pages        | Responsive 3→2→1 column grid      |
+| `.card-grid`            | Phase pages        | Responsive 3->2->1 column grid      |
 | `.card`                 | Phase pages        | Topic card with hover lift         |
 | `.card__link`           | Phase pages        | Wrapping `<a>` around card         |
 | `.article`              | Topic pages        | Content container (max-width 720px)|
@@ -111,23 +111,24 @@ In `before.html`, `during.html`, or `after.html`, find the `<!-- ADD MORE CARDS 
 ### New topic page
 
 1. Copy `topic-template.html` and rename using the convention: `{phase}-{topic}.html` (e.g., `before-visa.html`, `after-banking.html`)
-2. Search for `<!-- EDIT -->` comments in the copied file — they mark every spot you need to update (title, breadcrumb, nav active state, back link)
+2. Search for `<!-- EDIT -->` comments in the copied file - they mark every spot you need to update (title, breadcrumb, nav active state, back link)
 3. Write content between `YOUR CONTENT STARTS HERE` and `YOUR CONTENT ENDS HERE`
 
 ### Available content blocks in topic pages
 
-- `<h2>` / `<h3>` — section headings
-- `<p>`, `<ul>`, `<ol>` — body content
-- `.callout.callout--tip` — gold tip box (title color: `#B8860B`)
-- `.callout.callout--warning` — red warning box (title color: `#C0392B`)
-- `.callout.callout--note` — blue info box (title color: `#2E86C1`)
+- `<h2>` / `<h3>` - section headings
+- `<p>`, `<ul>`, `<ol>` - body content
+- `.callout.callout--tip` - gold tip box (title color: `#B8860B`)
+- `.callout.callout--warning` - red warning box (title color: `#C0392B`)
+- `.callout.callout--note` - blue info box (title color: `#2E86C1`)
 
 ## Conventions
 
 - BEM-style CSS class naming: `.block__element--modifier`
-- Inline SVG icons (Feather icon style — stroke-based, 24x24 viewBox)
+- Inline SVG icons (Feather icon style - stroke-based, 24x24 viewBox)
 - All pages share the same nav, footer, and mobile hamburger toggle script (inline `<script>` at bottom of `<body>`)
-- Responsive breakpoints: 1024px (3→2 cols), 768px (2→1 col + hamburger nav)
+- Responsive breakpoints: 1024px (3->2 cols), 768px (2->1 col + hamburger nav)
 - Nav active state: add `class="active"` to the current phase's `<a>` in `.nav__links`
 - File naming: `{phase}-{topic}.html` for topic pages
 - The `.nav__brand` text is currently empty on all pages
+

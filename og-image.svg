@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Path Back to India">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#2D3436"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="180" fill="#D4A373" fill-opacity="0.18"/>
+  <circle cx="160" cy="540" r="220" fill="#D4A373" fill-opacity="0.14"/>
+  <text x="90" y="290" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="68" font-weight="700">Path Back to India</text>
+  <text x="90" y="355" fill="#E0E0E0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34">Practical guide for moving from the US to India</text>
+</svg>

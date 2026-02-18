@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version:*)",
+      "Bash(winget install:*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI\")",
+      "Bash(gh:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:pixabay.com)",
+      "Bash(python3 -c \" import json,sys data = json.load\\(sys.stdin\\) for r in data[''results''][:5]: desc = r.get\\(''description''\\) or r.get\\(''alt_description''\\) or ''no desc'' print\\(f\"\"{r[''id'']} | {r[''urls''][''raw''].split\\(''?''\\)[0]} | {desc}\"\"\\) \")",
+      "Bash(git status:*)"
+    ]
+  }
+}
