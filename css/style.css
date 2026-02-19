@@ -683,13 +683,16 @@ img {
 }
 
 .footer__disclaimer {
-  margin-top: 1rem;
-  font-size: 0.75rem;
-  color: var(--color-border);
-  max-width: 480px;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid #E17055;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #C0392B;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* --- Utility --- */

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Colorful India scene</title>
+  <desc id="desc">A colorful illustration inspired by India with sky gradient, city silhouette, kites, and festive powders.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9a3d"/>
+      <stop offset="45%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#sky)"/>
+
+  <circle cx="930" cy="160" r="78" fill="#fff7cc" opacity="0.9"/>
+
+  <g opacity="0.35" filter="url(#soft)">
+    <circle cx="190" cy="125" r="70" fill="#ef4444"/>
+    <circle cx="260" cy="205" r="85" fill="#8b5cf6"/>
+    <circle cx="340" cy="130" r="60" fill="#22c55e"/>
+  </g>
+
+  <g fill="#0f172a" opacity="0.78">
+    <rect x="60" y="360" width="100" height="180"/>
+    <rect x="180" y="315" width="130" height="225"/>
+    <rect x="330" y="390" width="120" height="150"/>
+    <rect x="475" y="280" width="90" height="260"/>
+    <rect x="590" y="340" width="140" height="200"/>
+    <rect x="755" y="300" width="120" height="240"/>
+    <rect x="900" y="355" width="100" height="185"/>
+    <rect x="1025" y="320" width="120" height="220"/>
+  </g>
+
+  <g fill="#1e293b">
+    <path d="M520 260h30v280h-30z"/>
+    <path d="M500 300h70l-35-58z"/>
+    <path d="M532 205h8v55h-8z"/>
+  </g>
+
+  <g stroke="#ffffff" stroke-width="4" opacity="0.95">
+    <line x1="180" y1="170" x2="250" y2="220"/>
+    <line x1="980" y1="230" x2="1040" y2="280"/>
+  </g>
+  <g>
+    <polygon points="250,220 292,192 320,235 278,263" fill="#f43f5e"/>
+    <polygon points="1040,280 1078,250 1110,290 1072,320" fill="#10b981"/>
+  </g>
+
+  <rect y="540" width="1200" height="160" fill="url(#ground)"/>
+
+  <g opacity="0.9">
+    <circle cx="140" cy="620" r="46" fill="#fb7185"/>
+    <circle cx="220" cy="640" r="42" fill="#a78bfa"/>
+    <circle cx="300" cy="615" r="38" fill="#34d399"/>
+    <circle cx="930" cy="630" r="44" fill="#60a5fa"/>
+    <circle cx="1010" cy="610" r="40" fill="#facc15"/>
+    <circle cx="1085" cy="640" r="36" fill="#f97316"/>
+  </g>
+</svg>
